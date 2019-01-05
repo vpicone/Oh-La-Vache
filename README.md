@@ -14,3 +14,8 @@ Although the css-in-js solution that comes pre-packaged with next.js (styled-jsx
 
 ### Typescript
 Typescript was used because it rules. The typehints and refactoring super powers make it a joy to work with _chef kiss_
+
+## Notes
+- This project uses some fonts not included in this repository. You can place your own fonts in a `/static/` directory at the root of the project and update the `@font-family` definitions in `_app.js`
+  - For body copy is the amazing [Colfax](https://processtypefoundry.com/fonts/colfax/)
+  - And for headers is the playful [Munky](https://creativemarket.com/itsmesimon/752146-Munky-font)
