@@ -1,0 +1,42 @@
+{
+  "name": "oh-la-vache",
+  "version": "1.0.0",
+  "description": "Oh la vache!",
+  "homepage": "https://ohlavache.now.sh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vpicone/Oh-La-Vache"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "deploy": "now && now alias"
+  },
+  "keywords": [
+    "Oh La Vache!",
+    "Foodtruck",
+    "Next.js",
+    "typescript",
+    "styled-components"
+  ],
+  "author": "Vince Picone <vp@vincepic.one> (https://vincepic.one/)",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "next": "^8.0.0-canary.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/next": "^7.0.6",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "@types/styled-components": "^4.1.4",
+    "@types/styled-jsx": "^2.2.7",
+    "typescript": "^3.2.2"
+  }
+}
