@@ -4,14 +4,13 @@ import Paragraph from "../components/Paragraph";
 
 const Quote = styled.blockquote`
   margin: 0;
-  margin: 4rem 0 2rem 0;
+  padding: 2.5rem 0;
   font-size: 2.5rem;
   line-height: 1.15;
   font-style: italic;
   font-weight: 900;
   text-align: center;
   @media (max-width: 900px) {
-    margin: 3rem 0 1rem 0;
     font-size: 2rem;
   }
 `;

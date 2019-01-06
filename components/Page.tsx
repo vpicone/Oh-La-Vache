@@ -18,6 +18,7 @@ const Page = styled.div`
   hyphens: auto;
   @media (max-width: 900px) {
     margin-top: 0;
+    justify-content: flex-start;
     padding: 80px 2.5rem 0 2.5rem;
     min-height: 100vh;
   }
