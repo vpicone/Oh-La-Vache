@@ -17,6 +17,9 @@ const MenuSection = styled.article`
   h3 {
     margin: 0.8rem 0;
     font-size: 1.5rem;
+    @media (max-width: 900px) {
+      font-size: 1.25rem;
+    }
   }
   .list {
     list-style: none;
@@ -29,7 +32,7 @@ const MenuSection = styled.article`
     font-size: 1.25rem;
   }
   .list-item--drink {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
 `;
 
@@ -37,8 +40,9 @@ const Description = styled.em`
   margin: 0.5rem;
   font-size: 1.25rem;
   hyphens: auto;
-  @media (max-width: 900px) {
-    font-size: 1.25rem;
+  @media (min-width: 900px) {
+    width: 80%;
+    font-size: 1rem;
   }
 `;
 
@@ -48,6 +52,9 @@ const Price = styled.strong`
   margin: 0.5rem 0;
   font-family: Munky;
   color: var(--black01);
+  @media (max-width: 900px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export default () => (
@@ -80,7 +87,8 @@ export default () => (
       <Paragraph style={{ textAlign: "left" }}>
         Our ice creams are a commitment to both quality and ethical sourcing. We
         feature a rotating selection of no less than 5 seasonal ice creams with
-        vegan and dairy free options. You can count on us to always have:
+        vegan and dairy free options.
+        <strong> You can count on us to always have:</strong>
       </Paragraph>
       <ul className="list">
         <li style={{ margin: "2rem 0" }}>

@@ -14,7 +14,7 @@ const Quote = styled.blockquote`
   hyphens: auto;
   text-align: center;
   @media (max-width: 900px) {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 `;
 
