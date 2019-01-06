@@ -1,14 +1,16 @@
 import Page from "../components/Page";
 import styled from "styled-components";
 import Paragraph from "../components/Paragraph";
+import PageTitle from "../components/PageTitle";
 
 const Quote = styled.blockquote`
   margin: 0;
-  padding: 2.5rem 0;
-  font-size: 2.5rem;
+  padding: 1rem 0;
+  font-size: 1.25rem;
   line-height: 1.15;
+  color: var(--black05);
   font-style: italic;
-  font-weight: 900;
+  font-weight: 400;
   text-align: center;
   @media (max-width: 900px) {
     font-size: 2rem;
@@ -17,9 +19,10 @@ const Quote = styled.blockquote`
 
 export default () => (
   <Page title="About">
+    <PageTitle style={{ marginTop: "4rem" }}>Our Story</PageTitle>
     <Quote>
-      "New Orleans is our home. Every flavor is an expression of the vibrancy of
-      the communities, and cultures of our great city."
+      "New Orleans is our home. Each of our flavors is an expression of the
+      vibrancy of the communities, and cultures of our great city."
     </Quote>
     <Paragraph>
       Oh La Vache! ice cream is an American play on a French custard. We source

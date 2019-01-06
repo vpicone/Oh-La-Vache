@@ -59,8 +59,7 @@ export default class MyApp extends App {
           h3,
           h4,
           h5,
-          h6,
-          blockquote {
+          h6 {
             font-family: Munky;
             color: var(--black01);
             line-height: 1.15;
