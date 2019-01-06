@@ -11,9 +11,10 @@ const Quote = styled.blockquote`
   color: var(--black05);
   font-style: italic;
   font-weight: 400;
+  hyphens: auto;
   text-align: center;
   @media (max-width: 900px) {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 `;
 
@@ -21,8 +22,8 @@ export default () => (
   <Page title="About">
     <PageTitle style={{ marginTop: "4rem" }}>Our Story</PageTitle>
     <Quote>
-      "New Orleans is our home. Each of our flavors is an expression of the
-      vibrancy of the communities, and cultures of our great city."
+      "New Orleans is our home. Each of our flavors is an intimate expression of
+      the vibrant communities and cultures of our great city."
     </Quote>
     <Paragraph>
       Oh La Vache! ice cream is an American play on a French custard. We source
@@ -42,6 +43,8 @@ export default () => (
       We invite you to enjoy this tribute to the city that has given us both so
       much.
     </Paragraph>
-    <p style={{ textAlign: "center" }}>— Bradley Ward, Robert Tabone & team</p>
+    <em style={{ textAlign: "center", margin: "1rem 0" }}>
+      — Bradley Ward, Robert Tabone & team
+    </em>
   </Page>
 );

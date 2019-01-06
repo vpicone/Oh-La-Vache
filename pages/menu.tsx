@@ -25,7 +25,7 @@ const MenuSection = styled.article`
     text-align: center;
   }
   .list-item {
-    margin: 2rem 0;
+    margin: 1rem 0;
     font-size: 1.25rem;
   }
   .list-item--drink {
@@ -55,9 +55,9 @@ export default () => (
     <MenuSection>
       <PageTitle>Oh La Vache! Sliders</PageTitle>
       <Description>
-        Louisiana grass-fed beef, Mississippi Farmmhouse Cheddar Local Hydro Bib
-        lettuce, Creole Tomatoes, Oh La Vache! sauce on a Dong Phuong Brioche
-        Bun
+        Louisiana grass-fed beef, Mississippi farmhouse cheddar, local hydro
+        lettuce, Creole tomatoes, Oh La Vache! sauce, and a Dong Phuong brioche
+        bun
       </Description>
       <Price>5</Price>
     </MenuSection>
@@ -76,11 +76,11 @@ export default () => (
       <Price>3</Price>
     </MenuSection>
     <MenuSection>
-      <PageTitle>Ice Cream and Sorbet</PageTitle>
+      <PageTitle>Ice Cream & Sorbet</PageTitle>
       <Paragraph style={{ textAlign: "left" }}>
-        Our Ice creams are a commitment to both quality and ethical sourcing. we
-        feature a rotating selection of no less than 5 seasonal ice creams, with
-        vegan options and a dairy free sorbet.
+        Our ice creams are a commitment to both quality and ethical sourcing. We
+        feature a rotating selection of no less than 5 seasonal ice creams with
+        vegan and dairy free options. You can count on us to always have:
       </Paragraph>
       <ul className="list">
         <li style={{ margin: "2rem 0" }}>
