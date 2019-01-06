@@ -17,7 +17,7 @@ const Logo = styled.img`
 `;
 
 export default () => (
-  <Page title="Home | Oh La Vache!">
+  <Page title="Home">
     <CenteredContainer>
       <Logo
         alt="Oh La Vache! Cow Logo with with ice cream & sliders subtext"

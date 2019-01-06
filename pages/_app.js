@@ -24,10 +24,32 @@ export default class MyApp extends App {
           *:after {
             box-sizing: border-box;
           }
+
           html {
+            --black: #262f3a;
+            --blue: #70aedf;
+            --lightyellow: #ffd67c;
+            --red: #e4695d;
+            --orange: #fdbb2d;
             background-image: url("https://res.cloudinary.com/vpp/image/upload/c_scale,f_auto,o_25,q_auto,w_800/v1546640879/oh-la-vache/marble.png");
             background-repeat: no-repeat;
             background-size: cover;
+          }
+
+          body {
+            font-family: Colfax;
+            color: var(--black);
+            line-height: 1.5;
+          }
+
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            font-family: Munky;
+            line-height: 1.15;
           }
           @font-face {
             font-family: "Colfax";
@@ -144,17 +166,6 @@ export default class MyApp extends App {
             font-weight: bold;
             font-style: normal;
             font-display: fallback;
-          }
-          body {
-            font-family: Colfax;
-          }
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6 {
-            font-family: Munky;
           }
         `}</style>
       </Container>
