@@ -35,8 +35,7 @@ const MenuSection = styled.article`
 
 const Description = styled.em`
   margin: 0.5rem;
-  font-size: 1.5rem;
-  text-align: left;
+  font-size: 1.25rem;
   hyphens: auto;
   @media (max-width: 900px) {
     font-size: 1.25rem;
@@ -46,7 +45,9 @@ const Description = styled.em`
 const Price = styled.strong`
   text-align: center;
   font-size: 1.5rem;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
+  font-family: Munky;
+  color: var(--black01);
 `;
 
 export default () => (
@@ -83,13 +84,13 @@ export default () => (
       </Paragraph>
       <ul className="list">
         <li style={{ margin: "2rem 0" }}>
-          <h3>Oh La Vache! Vanilla</h3>
+          <h3>Oh La Vanilla!</h3>
           <Description>
             Signature blend of vanillas spanning three continents
           </Description>
         </li>
         <li style={{ margin: "2rem 0" }}>
-          <h3>Oh La Vache! Chocolate</h3>
+          <h3>Oh La Chocolate!</h3>
           <Description>Melange of Cemoi Dark and Milk chocolates</Description>
         </li>
       </ul>
@@ -103,22 +104,22 @@ export default () => (
       >
         <li className="list-item">
           <span>1 scoop</span>
-          <strong>
+          <Price>
             <br />3
-          </strong>
+          </Price>
         </li>
         <li className="list-item">
           2 scoops
-          <strong>
+          <Price>
             <br />6
-          </strong>
+          </Price>
         </li>
         <li className="list-item">
           3 scoops
-          <strong>
+          <Price>
             <br />
             8.5
-          </strong>
+          </Price>
         </li>
       </ul>
     </MenuSection>

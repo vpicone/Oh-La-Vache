@@ -8,7 +8,7 @@ const NavLink = styled.a<{ active: boolean; home: boolean }>`
   letter-spacing: 0.1ch;
   text-transform: uppercase;
   color: ${({ home }) => {
-    if (home) return "var(--black)";
+    if (home) return "var(--black01)";
     return "var(--lightyellow)";
   }};
   border-bottom: ${({ active }) =>
@@ -46,7 +46,7 @@ const NavBar = styled.nav<{ home: boolean }>`
   font-size: 2.5rem;
   text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 0 10vw;
-  background: ${({ home }) => (home ? "transparent" : "var(--darkblue)")};
+  background: ${({ home }) => (home ? "transparent" : "var(--blue)")};
   top: ${({ home }) => (home ? "70vh" : "0")};
   width: 100%;
   display: inline-flex;

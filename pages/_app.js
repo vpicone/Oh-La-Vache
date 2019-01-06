@@ -28,9 +28,15 @@ export default class MyApp extends App {
             box-sizing: border-box;
           }
           html {
-            --black: #262f3a;
+            --black01: #262f3a;
+            --black02: #364252;
+            --black03: #4d5f75;
+            --black04: #7086a1;
+            --black05: #9faec0;
+            --black06: #dae0e7;
             --blue: #70aedf;
             --darkblue: #246aa2;
+            --blue02: #e0eef9;
             --lightblue: #f0f7fc;
             --lightyellow: #ffd67c;
             --red: #e4695d;
@@ -44,7 +50,7 @@ export default class MyApp extends App {
           body {
             height: 100%;
             font-family: Colfax;
-            color: var(--black);
+            color: var(--black03);
             line-height: 1.5;
           }
 
@@ -53,11 +59,14 @@ export default class MyApp extends App {
           h3,
           h4,
           h5,
-          h6 {
+          h6,
+          blockquote {
             font-family: Munky;
+            color: var(--black01);
             line-height: 1.15;
             text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.08);
           }
+
           @font-face {
             font-family: "Colfax";
             font-display: "fallback";
