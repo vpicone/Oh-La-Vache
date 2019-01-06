@@ -43,7 +43,8 @@ type Page = "/" | "/about" | "/menu" | "/catering";
 
 const NavBar = styled.nav<{ home: boolean }>`
   position: fixed;
-  box-shadow: 0 3px 2px -1px rgba(0, 0, 0, 0.15);
+  box-shadow: ${({ home }) =>
+    home ? "none" : "0 3px 2px -1px rgba(0, 0, 0, 0.15)"};
   font-size: 2rem;
   text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 0 10vw;
