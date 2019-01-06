@@ -7,16 +7,28 @@ const NavLink = styled.a<{ active: boolean; home: boolean }>`
   cursor: pointer;
   letter-spacing: 0.1ch;
   text-transform: uppercase;
-  color: ${({ active, home }) => {
+  color: ${({ home }) => {
     if (home) return "var(--black)";
-    return active ? "var(--orange)" : "var(--lightyellow)";
+    return "var(--lightyellow)";
   }};
+  border-bottom: ${({ active }) =>
+    active ? "3px solid var(--lightyellow)" : "3px solid transparent"};
   text-decoration: none;
   font-variant: all-small-caps;
   font-weight: 500;
-  text-shadow: ${({ active }) =>
-    active ? "2px 2px 0px var(--blue)" : "0px 0px 0px var(--orange)"};
+  text-shadow: 1.5px 1.5px 0px var(--red);
   transition: all 0.6s ease;
+  position: relative;
+  &:after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    right: -1px;
+    left: 1.5px;
+    bottom: -4.5px;
+    border: 1.5px solid
+      ${({ active }) => (active ? "var(--red)" : "transparent")};
+  }
   @media (min-width: 900px) {
     &:hover {
       color: var(--orange);
@@ -46,7 +58,7 @@ const NavBar = styled.nav<{ home: boolean }>`
   height: 80px;
   @media (max-width: 900px) {
     padding: 1rem 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     top: ${({ home }) => (home ? "50vh" : "0")};
     justify-content: space-around;
   }
