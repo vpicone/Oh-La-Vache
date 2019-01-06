@@ -13,9 +13,8 @@ export default () => (
       onsite catering from the truck.
     </Paragraph>
     <Paragraph style={{ textAlign: "center" }}>
-      For more information and catering estimates please email
+      For more information and catering estimates please email&nbsp;
       <a style={{ color: "var(--blue)" }} href="mailto:info@ohlavache.us">
-        {" "}
         info@ohlavache.us
       </a>
     </Paragraph>

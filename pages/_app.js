@@ -36,7 +36,7 @@ export default class MyApp extends App {
             --red: #e4695d;
             --orange: #fdbb2d;
             min-height: 100vh;
-            background-image: url("https://res.cloudinary.com/vpp/image/upload/c_scale,f_auto,o_25,q_auto,w_800/v1546640879/oh-la-vache/marble.png");
+            background-image: url("https://res.cloudinary.com/vpp/image/upload/c_scale,f_auto,o_20,q_auto,w_800/v1546640879/oh-la-vache/marble.png");
             background-repeat: no-repeat;
             background-size: cover;
           }
@@ -56,6 +56,7 @@ export default class MyApp extends App {
           h6 {
             font-family: Munky;
             line-height: 1.15;
+            text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.08);
           }
           @font-face {
             font-family: "Colfax";

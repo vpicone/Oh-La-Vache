@@ -11,12 +11,12 @@ const NavLink = styled.a<{ active: boolean; home: boolean }>`
     if (home) return "var(--black)";
     return active ? "var(--orange)" : "var(--lightyellow)";
   }};
-  border-bottom: ${({ active }) =>
-    active ? "4px solid var(--orange)" : "4px solid transparent"};
   text-decoration: none;
   font-variant: all-small-caps;
   font-weight: 500;
-  transition: all 0.3s ease;
+  text-shadow: ${({ active }) =>
+    active ? "2px 2px 0px var(--blue)" : "0px 0px 0px var(--orange)"};
+  transition: all 0.6s ease;
   @media (min-width: 900px) {
     &:hover {
       color: var(--orange);
@@ -46,7 +46,7 @@ const NavBar = styled.nav<{ home: boolean }>`
   height: 80px;
   @media (max-width: 900px) {
     padding: 1rem 1rem;
-    font-size: 1.4rem;
+    font-size: 2rem;
     top: ${({ home }) => (home ? "50vh" : "0")};
     justify-content: space-around;
   }

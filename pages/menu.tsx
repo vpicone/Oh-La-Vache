@@ -98,7 +98,7 @@ export default () => (
         style={{
           display: "flex",
           width: "100%",
-          justifyContent: "space-evenly"
+          justifyContent: "space-between"
         }}
       >
         <li className="list-item">

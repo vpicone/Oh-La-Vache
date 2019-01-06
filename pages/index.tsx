@@ -11,7 +11,7 @@ const CenteredContainer = styled.main`
 
 const Logo = styled.img`
   width: 45vw;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   max-width: 600px;
   min-width: 300px;
   @media (max-width: 900px) {
