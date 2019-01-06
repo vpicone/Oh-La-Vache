@@ -1,6 +1,7 @@
 import React from "react";
 import App, { Container } from "next/app";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
@@ -14,29 +15,34 @@ export default class MyApp extends App {
 
   render() {
     const { Component, pageProps, router } = this.props;
+    const home = this.props.router.route === "/";
     return (
       <Container>
         <Nav active={this.props.router.route} />
         <Component {...pageProps} />
+        {!home && <Footer />}
         <style jsx global>{`
           *,
           *:before,
           *:after {
             box-sizing: border-box;
           }
-
           html {
             --black: #262f3a;
             --blue: #70aedf;
+            --darkblue: #246aa2;
+            --lightblue: #f0f7fc;
             --lightyellow: #ffd67c;
             --red: #e4695d;
             --orange: #fdbb2d;
+            min-height: 100vh;
             background-image: url("https://res.cloudinary.com/vpp/image/upload/c_scale,f_auto,o_25,q_auto,w_800/v1546640879/oh-la-vache/marble.png");
             background-repeat: no-repeat;
             background-size: cover;
           }
 
           body {
+            height: 100%;
             font-family: Colfax;
             color: var(--black);
             line-height: 1.5;

@@ -35,7 +35,7 @@ const NavBar = styled.nav<{ home: boolean }>`
   font-size: 2rem;
   text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 0 10vw;
-  background: ${({ home }) => (home ? "transparent" : "var(--black)")};
+  background: ${({ home }) => (home ? "transparent" : "var(--darkblue)")};
   top: ${({ home }) => (home ? "70vh" : "0")};
   width: 100%;
   display: inline-flex;

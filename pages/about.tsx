@@ -1,18 +1,19 @@
 import Page from "../components/Page";
 import styled from "styled-components";
+import Paragraph from "../components/Paragraph";
 
 const Quote = styled.blockquote`
   margin: 0;
-  margin-top: 2.5rem;
-  font-size: 1.5rem;
+  margin: 4rem 0 2rem 0;
+  font-size: 2.5rem;
   line-height: 1.15;
   font-style: italic;
   font-weight: 900;
   text-align: center;
-`;
-
-const Paragraph = styled.p`
-  font-size: 1.25rem;
+  @media (max-width: 900px) {
+    margin: 3rem 0 1rem 0;
+    font-size: 2rem;
+  }
 `;
 
 export default () => (
