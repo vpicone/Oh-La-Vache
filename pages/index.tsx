@@ -6,16 +6,18 @@ const CenteredContainer = styled.main`
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
 `;
 
 const Logo = styled.img`
   width: 45vw;
-  margin-bottom: 0rem;
+  margin-bottom: 4rem;
   max-width: 600px;
   min-width: 300px;
   @media (max-width: 900px) {
-    margin-bottom: 20rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
   }
 `;
 

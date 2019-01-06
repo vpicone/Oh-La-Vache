@@ -7,7 +7,7 @@ export default () => (
     <PageTitle style={{ fontSize: "3rem", paddingTop: "2.5rem" }}>
       Let's build something.
     </PageTitle>
-    <Paragraph style={{ textAlign: "center" }}>
+    <Paragraph style={{ maxWidth: "600px" }}>
       Oh La Vache! is available for catering events big and small, from office
       lunches to birthdays and weddings. We offer party set ups, as well as full
       onsite catering from the truck.
