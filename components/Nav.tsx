@@ -16,18 +16,17 @@ const NavLink = styled.a<{ active: boolean; home: boolean }>`
   text-decoration: none;
   font-variant: all-small-caps;
   font-weight: 500;
-  text-shadow: 1.5px 1.5px 0px var(--red);
-  transition: all 0.6s ease;
+  text-shadow: ${({ home }) => (home ? "none" : "2.5px 2.5px 0px var(--red)")};
+  transition: all 0.3s ease;
   position: relative;
   &:after {
     content: " ";
     position: absolute;
     z-index: -1;
-    right: -1px;
-    left: 1.5px;
-    bottom: -4.5px;
-    border: 1.5px solid
-      ${({ active }) => (active ? "var(--red)" : "transparent")};
+    right: -3px;
+    left: 3px;
+    bottom: -6px;
+    border: 2px solid ${({ active }) => (active ? "var(--red)" : "transparent")};
   }
   @media (min-width: 900px) {
     &:hover {
@@ -44,7 +43,7 @@ type Page = "/" | "/about" | "/menu" | "/catering";
 
 const NavBar = styled.nav<{ home: boolean }>`
   position: fixed;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 0 10vw;
   background: ${({ home }) => (home ? "transparent" : "var(--darkblue)")};
