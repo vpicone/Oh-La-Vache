@@ -4,9 +4,7 @@ import Paragraph from "../components/Paragraph";
 
 export default () => (
   <Page title="Catering">
-    <PageTitle style={{ marginTop: "2rem", fontSize: "3rem" }}>
-      Let's build something.
-    </PageTitle>
+    <PageTitle style={{ fontSize: "3rem" }}>Let's build something.</PageTitle>
     <Paragraph style={{ textAlign: "center" }}>
       Oh La Vache! is available for catering events big and small, from office
       lunches to birthdays and weddings. We offer party set ups, as well as full
